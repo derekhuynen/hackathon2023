@@ -3,14 +3,20 @@ import createSagaMiddleware from 'redux-saga';
 import rootSaga from './saga/config';
 import modalReducer from './slice/modalSlice';
 import configReducer from './slice/configSlice';
-import userModal from './slice/userSlice';
+import userReducer from './slice/userSlice';
+import projectReducer from './slice/projectSlice';
+import projectFormReducer from './slice/projectFormSlice';
+import projectDraftReducer from './slice/projectDraftSlice';
 
 const sagaMiddleware = createSagaMiddleware();
 
 const reducer = combineReducers({
   modal: modalReducer,
   config: configReducer,
-  user: userModal,
+  user: userReducer,
+  project: projectReducer,
+  projectForm: projectFormReducer,
+  projectDraft: projectDraftReducer,
 });
 
 export const store = configureStore({

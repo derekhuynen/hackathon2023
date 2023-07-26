@@ -8,6 +8,7 @@ import Layout from './shared/Layout';
 import Home from './pages/home/Home';
 import { useMemo } from 'react';
 import { initialTheme } from './constants/initialTheme';
+import ProjectPage from 'pages/project/ProjectPage';
 
 
 const App = () => {
@@ -31,6 +32,8 @@ const App = () => {
           <Layout>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/project/:id" element={<ProjectPage />} />
+              <Route path="*" element={<h1>404</h1>} />
             </Routes>
           </Layout >
         </BrowserRouter>

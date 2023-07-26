@@ -1,6 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
-
-export const BASE_URL = '';
+import { BASE_URL } from 'constants/constants';
 
 const apiConfig: AxiosRequestConfig = {
   baseURL: BASE_URL,

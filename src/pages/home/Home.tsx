@@ -1,16 +1,28 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
+import ProjectList from "./ProjetList";
+import ProjectForm from "./ProjectForm";
 
-import Demo1 from "./Demo/Demo1";
+
 
 const Home = () => {
 
     return (
-        <Box sx={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Box sx={{
+            display: "flex",
+            flexDirection: "row",
+            padding: "24px",
+        }}>
+            <ProjectList />
 
+            <Box sx={{
+                flexGrow: 1,
+            }}>
 
-            <Demo1 />
+                <ProjectForm />
+            </Box>
 
         </Box>
+
 
     );
 }
