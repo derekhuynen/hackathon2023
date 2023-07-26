@@ -1,0 +1,15 @@
+{
+  "short_name": "2023",
+  "name": "2023",
+  "icons": [
+    {
+      "src": "dh.png",
+      "type": "image/png",
+      "sizes": "100X100"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
